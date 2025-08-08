@@ -1,9 +1,251 @@
-<html>
-    <head>
-        <title>Joshua's Portfolio<title>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Shivbalak</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f3f8fc;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            max-width: 700px;
+            margin: 48px auto 0 auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(21,101,192,0.08);
+            padding: 40px 32px 32px 32px;
+        }
+        h1 {
+            font-size: 2.7em;
+            font-weight: 700;
+            color: #1565c0;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            font-size: 1.15em;
+            color: #1565c0;
+            margin-bottom: 18px;
+            font-weight: 500;
+        }
+        .bio {
+            font-size: 1.08em;
+            color: #333;
+            margin-bottom: 22px;
+        }
+        
+.resume-btn {
+    background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 32px;
+    font-size: 1.12em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 8px rgba(21,101,192,0.10);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
 
-    <body>
-         <p>Hello! Welcome to my portfolio website!
-    </body>
-    <html>
+.resume-btn:hover, .resume-btn:focus {
+    background: linear-gradient(90deg, #42a5f5 0%, #1565c0 100%);
+    box-shadow: 0 8px 24px rgba(21,101,192,0.18), 0 0 0 4px #bbdefb;
+    transform: scale(1.08) rotate(-2deg);
+    outline: none;
+    animation: bounceResume 0.5s;
+}
+
+@keyframes bounceResume {
+    0%   { transform: scale(1) rotate(0deg);}
+    40%  { transform: scale(1.12) rotate(-3deg);}
+    60%  { transform: scale(0.98) rotate(2deg);}
+    100% { transform: scale(1.08) rotate(-2deg);}
+}
+   
+
+    
+
+        .section-title {
+            font-size: 1.15em;
+            color: #1565c0;
+            font-weight: 600;
+            margin-top: 36px;
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .blue-underline {
+            border: none;
+            border-bottom: 2.5px solid #1565c0;
+            margin-bottom: 18px;
+            margin-top: 0;
+            width: 100%;
+        }
+        .contact-info {
+            font-size: 1.08em;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+        .contact-info a {
+            color: #1565c0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s, background 0.2s;
+            border-radius: 6px;
+            padding: 2px 6px;
+        }
+        .contact-info a:hover, .contact-info a:focus {
+            color: #0d47a1;
+            background: #e3f0ff;
+        }
+        .contact-info a:active {
+            color: #1976d2;
+            background: #bbdefb;
+        }
+        .contact-info i, .contact-info span.emoji {
+            font-size: 1.2em;
+            vertical-align: middle;
+        }
+        .education-details {
+            font-size: 1.05em;
+            color: #222;
+            margin-bottom: 8px;
+        }
+        .school-name {
+            font-weight: 600;
+            color: #1565c0;
+        }
+        .school-address {
+            font-size: 0.98em;
+            color: #555;
+        }
+        .education-years {
+            color: #1565c0;
+            font-size: 0.98em;
+            margin-top: 4px;
+        }
+        .social-links {
+            display: flex;
+            gap: 32px;
+            margin-top: 8px;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #1565c0;
+            font-size: 1.18em;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s, background 0.2s;
+            border-radius: 6px;
+            padding: 2px 6px;
+        }
+        .social-links a:hover, .social-links a:focus {
+            color: #0d47a1;
+            background: #e3f0ff;
+        }
+        .social-links a:active {
+            color: #1976d2;
+            background: #bbdefb;
+        }
+        footer {
+            text-align: center;
+            color: #1565c0;
+            font-size: 0.98em;
+            margin: 32px 0 16px 0;
+            padding-top: 16px;
+        }
+        @media (max-width: 600px) {
+            main { padding: 18px 8px; }
+            h1 { font-size: 2em; }
+        }
+    </style>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <style>
+        /* ...existing styles... */
+
+        .welcome-animated {
+            font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+            font-size: 3em;
+            font-weight: 800;
+            color: #111;
+            text-align: center;
+            margin-top: 48px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-decoration: underline;
+            animation: fadeInWelcome 1.2s ease-in;
+        }
+
+        @keyframes fadeInWelcome {
+            from { opacity: 0; transform: translateY(-30px);}
+            to   { opacity: 1; transform: translateY(0);}
+        }
+        /* ...existing styles... */
+    </style>
+</head>
+<body>
+    <div class="welcome-animated">
+        Welcome to my Portfolio
+    </div>
+    <main style="background:none; box-shadow:none; border-radius:0; padding-top:0;">
+        <!-- ...existing content... -->
+    </main>
+    <footer>
+    </footer>
+</body>
+    </div>
+    <main style="background:none; box-shadow:none; border-radius:0; padding-top:0;">
+        <h1>Joshua Shivbalak</h1>
+        <div class="subtitle">Student | Christ the King High School</div>
+        <p class="bio">
+            Student passionate about cybersecurity, technology, and personal growth.<br>
+            Interested in ethical hacking, digital safety, and building a positive impact through innovation.<br>
+            Always eager to collaborate, solve problems, and grow as a leader in tech.
+        </p>
+        <button class="resume-btn" onclick="window.open('resume.pdf', '_blank')">
+            <i class="fas fa-file-alt"></i> View Resume
+        </button>
+
+        <div class="section-title">Contact</div>
+        <hr class="blue-underline">
+        <div class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <a class="email" href="mailto:josh.d.shivbalak@gmail.com">josh.d.shivbalak@gmail.com</a>
+        </div>
+        <div class="contact-info"></div>
+
+        <div class="section-title">Education</div>
+        <hr class="blue-underline">
+        <div class="education-details">
+            <span class="school-name">Christ the King High School</span><br>
+            <span class="school-address">68-02 Metropolitan Ave, Queens, NY 11379</span>
+            <div class="education-years">2022 - 2026</div>
+        </div>
+
+        <div class="section-title">Social</div>
+        <hr class="blue-underline">
+        <div class="social-links">
+            <a class="github" href="https://github.com/js12646" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </main>
+    <footer>
